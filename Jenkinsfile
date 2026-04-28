@@ -3,12 +3,16 @@ pipeline{
 
     stages{
         stage ("Clean WS"){
+            steps{
             CleanWS()
+            }
         }
 
         stage ("git checkout"){
+            steps{
             script{
                 git branch: 'Rel-001', url: 'https://github.com/Sukhanth-9821/CodeExperts_CI.git'
+            }
             }
         }
 
