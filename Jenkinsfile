@@ -11,7 +11,7 @@ pipeline{
         stage ("git checkout"){
             steps{
             script{
-                git branch: 'Rel-001', url: 'https://github.com/Sukhanth-9821/CodeExperts_CI.git'
+                git branch: 'REL-001', url: 'https://github.com/Sukhanth-9821/CodeExperts_CI.git'
             }
             }
         }
